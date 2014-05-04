@@ -1,0 +1,23 @@
+{
+  "name": "yeelight-blue",
+  "version": "0.0.0",
+  "description": "A node.js lib for the yeelight blue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandeepmistry/node-yeelight-blue.git"
+  },
+  "keywords": [
+    "yeelight",
+    "blue"
+  ],
+  "author": "Sandeep Mistry <sandeep.mistry@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sandeepmistry/node-yeelight-blue/issues"
+  },
+  "homepage": "https://github.com/sandeepmistry/node-yeelight-blue"
+}
