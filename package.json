@@ -4,7 +4,7 @@
   "description": "A node.js lib for the yeelight blue",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jshint *.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/sandeepmistry/node-yeelight-blue/issues"
   },
-  "homepage": "https://github.com/sandeepmistry/node-yeelight-blue"
+  "homepage": "https://github.com/sandeepmistry/node-yeelight-blue",
+  "dependencies": {
+    "noble-device": "git://github.com/sandeepmistry/noble-device"
+  },
+  "devDependencies": {
+    "async": "~0.8.0",
+    "jshint": "~2.5.0"
+  }
 }
