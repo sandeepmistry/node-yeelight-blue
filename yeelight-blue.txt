@@ -1,0 +1,96 @@
+  Local Name        = Yeelight Blu
+  Service Data      = 
+  Service UUIDs     = fff0
+
+services and characteristics:
+1800 (Generic Access)
+  2a00 (Device Name)
+    properties  read
+    value       5965656c6967687420426c7565 | 'Yeelight Blue'
+  2a01 (Appearance)
+    properties  read
+    value       0000 | ''
+  2a02 (Peripheral Privacy Flag)
+    properties  read, write
+    value       00 | ''
+  2a03 (Reconnection Address)
+    properties  read, write
+    value       000000000000 | ''
+  2a04 (Peripheral Preferred Connection Parameters)
+    properties  read
+    value       5000a0000000e803 | 'P h'
+1801 (Generic Attribute)
+  2a05 (Service Changed)
+    properties  indicate
+180a (Device Information)
+  2a23 (System ID)
+    properties  read
+    value       1dc0de0000143388 | '@^'
+  2a24 (Model Number String)
+    properties  read
+    value       4d6f64656c204e756d62657200 | 'Model Number'
+  2a25 (Serial Number String)
+    properties  read
+    value       53657269616c204e756d62657200 | 'Serial Number'
+  2a26 (Firmware Revision String)
+    properties  read
+    value       4669726d77617265205265766973696f6e00 | 'Firmware Revision'
+  2a27 (Hardware Revision String)
+    properties  read
+    value       4861726477617265205265766973696f6e00 | 'Hardware Revision'
+  2a28 (Software Revision String)
+    properties  read
+    value       536f667477617265205265766973696f6e00 | 'Software Revision'
+  2a29 (Manufacturer Name String)
+    properties  read
+    value       4d616e756661637475726572204e616d6500 | 'Manufacturer Name'
+  2a2a (IEEE 11073-20601 Regulatory Certification Data List)
+    properties  read
+    value       fe006578706572696d656e74616c | '~experimental'
+  2a50 (PnP ID)
+    properties  read
+'   value       010d0000001001 | '
+fff0
+  fff1 (Characteristic 1)
+    properties  read, write
+    value       000000000000000000000000000000000000 | ''
+  fff2 (Characteristic 2)
+    properties  read, write
+    value       0000000000000000 | ''
+  fff3 (Characteristic 3)
+    properties  read, write
+    value       0000 | ''
+  fff4 (Characteristic 4)
+    properties  notify
+  fff5 (Characteristic 5)
+    properties  read, write
+    value       00 | ''
+  fff6 (Characteristic 6)
+    properties  notify
+  fff7 (Characteristic 7)
+    properties  read, write
+    value       0000000000000000000000000000000000000000 | ''
+  fff8 (Characteristic 8)
+    properties  read, write
+    value       000000000000000000000000000000 | ''
+  fff9 (Characteristic 9)
+    properties  notify
+  fffa (Characteristic10)
+    properties  read, write
+    value       0000 | ''
+  fffb (Characteristic11)
+    properties  notify
+  fffc (Characteristic12)
+    properties  read, write
+    value       0000 | ''
+  fffd (Characteristic13)
+    properties  read, write
+    value       000000000000 | ''
+  fffe (Characteristic14)
+    properties  read, write
+    value       00000000000000000000 | ''
+f000ffc004514000b000000000000000
+  f000ffc104514000b000000000000000 (Img Identify)
+    properties  writeWithoutResponse, write, notify
+  f000ffc204514000b000000000000000 (Img Block)
+    properties  writeWithoutResponse, write, notify
