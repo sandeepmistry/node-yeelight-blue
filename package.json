@@ -1,6 +1,6 @@
 {
   "name": "yeelight-blue",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A node.js lib for the yeelight blue",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/sandeepmistry/node-yeelight-blue",
   "dependencies": {
-    "noble-device": "git://github.com/sandeepmistry/noble-device"
+    "noble-device": "~0.1.0"
   },
   "devDependencies": {
     "async": "~0.8.0",
