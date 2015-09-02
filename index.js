@@ -15,7 +15,7 @@ YeelightBlue.SCAN_UUIDS = [SERVICE_UUID];
 YeelightBlue.is = function(peripheral) {
   var localName = peripheral.advertisement.localName;
 
-  return ((localName === undefined) || (localName === 'Yeelight Blu'));
+  return ((localName === undefined) || (localName === 'Yeelight Blu') || (localName === 'LightStrips'));
 };
 
 NobleDevice.Util.inherits(YeelightBlue, NobleDevice);
