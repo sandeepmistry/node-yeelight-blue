@@ -1,7 +1,7 @@
 {
   "name": "yeelight-blue",
-  "version": "0.1.0",
-  "description": "A node.js lib for the yeelight blue",
+  "version": "0.1.1",
+  "description": "A Node.js lib for the yeelight blue and lightstrips",
   "main": "index.js",
   "scripts": {
     "test": "jshint *.js"
