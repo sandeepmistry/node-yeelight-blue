@@ -1,5 +1,4 @@
-node-yeelight-blue
-==================
+# node-yeelight-blue
 
 [![Analytics](https://ga-beacon.appspot.com/UA-56089547-1/sandeepmistry/node-yeelight-blue?pixel)](https://github.com/igrigorik/ga-beacon)
 
@@ -8,55 +7,70 @@ A Node.js lib for the [yeelight blue](http://www.yeelight.com/en_US/product/yeel
 [Yeelight Blue Message Interface](http://www.yeelight.com/download/yeelight_blue_message_interface_v1.0.pdf)
 
 
-Install
--------
+## Install
 
-    npm install yeelight-blue
+```sh
+npm install yeelight-blue
+```
 
-Usage
------
+## Usage
 
-    var YeelightBlue = require('yeelight-blue');
+```javascript
+var YeelightBlue = require('yeelight-blue');
+```
 
-__Discover__
+### Discover
 
-    YeelightBlue.discover(callback(yeelightBlue));
+```javascript
+YeelightBlue.discover(callback(yeelightBlue));
+```
 
-__Connect and Setup__
+### Connect and Setup
 
-    // connects + discovers services and characteristics
-    yeelightBlue.connectAndSetup(callback);
+```javascript
+// connects + discovers services and characteristics
+yeelightBlue.connectAndSetUp(callback(error));
+```
 
-__Disconnect__
+### Disconnect
 
-    yeelightBlue.disconnect(callback);
+```javascript
+yeelightBlue.disconnect(callback);
+```
 
-__Turn off/on__
+### Turn off/on__
 
-    yeelightBlue.turnOff(callback);
+```javascript
+yeelightBlue.turnOff(callback(error));
 
-    yeelightBlue.turnOn(callback);
+yeelightBlue.turnOn(callback(error));
+```
 
-__Set Color and Brightness__
+### Set Color and Brightness
 
-    var red        = 255; // 0 - 255
-    var green      = 255; // 0 - 255
-    var blue       = 255; // 0 - 255
-    var brightness = 100; // 0 - 100
+```javascript
+var red        = 255; // 0 - 255
+var green      = 255; // 0 - 255
+var blue       = 255; // 0 - 255
+var brightness = 100; // 0 - 100
 
-    yeelightBlue.setColorAndBrightness(callback);
+yeelightBlue.setColorAndBrightness(callback(error));
+```
 
-__Set Gradual Mode__
+### Set Gradual Mode
 
 Enables/disables gradual fading when setting colors and brightness
 
-    var on = true; // true (default) | false
+```javascript
+var on = true; // true (default) | false
 
-    yeelightBlue.setGradualMode(on, callback);
+yeelightBlue.setGradualMode(on, callback(error));
+```
 
-Events
-------
+## Events
 
-__Disconnect__
+### Disconnect
 
-    yeelightBlue.on('disconnect', callback);
+```javascript
+yeelightBlue.on('disconnect', callback);
+```
