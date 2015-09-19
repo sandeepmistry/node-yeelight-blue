@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/sandeepmistry/node-yeelight-blue",
   "dependencies": {
-    "noble-device": "~0.1.0"
+    "noble-device": "~1.1.0"
   },
   "devDependencies": {
     "async": "~0.8.0",
