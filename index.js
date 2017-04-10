@@ -14,11 +14,13 @@ YeelightBlue.SCAN_UUIDS = [SERVICE_UUID];
 
 YeelightBlue.is = function(peripheral) {
   var localName = peripheral.advertisement.localName;
-  var allowedNames = ['Yeelight Blu','LightStrips'];
+  var allowedNames = ['Yeelight Blu', 'LightStrips'];
 
-  if(localName == undefined) return true;
+  if(localName == undefined) {
+    return true;
+  }
 
-  return allowedNames.some(function(name){
+  return allowedNames.some(function(name) {
     return localName.indexOf(name) > -1;
   });
 };
