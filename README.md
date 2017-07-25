@@ -57,6 +57,13 @@ var brightness = 100; // 0 - 100
 yeelightBlue.setColorAndBrightness(callback(error));
 ```
 
+### Get Color and Brightness
+
+```javascript
+yeelightBlue.getColorAndBrightness(callback(error, red, green, blue, brightness));
+```
+
+
 ### Set Gradual Mode
 
 Enables/disables gradual fading when setting colors and brightness
