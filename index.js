@@ -27,6 +27,19 @@ YeelightBlue.is = function(peripheral) {
 
 NobleDevice.Util.inherits(YeelightBlue, NobleDevice);
 
+YeelightBlue.prototype.readControlCharateristic = function(callback) {
+  this.readStringCharacteristic(SERVICE_UUID, CONTROL_UUID, function(error, string) {
+      if (error) {
+          return callback(error);
+      }
+
+      var data = string.split(',');
+
+      // error, red, green, blue, brightness
+      callback(null, parseInt(data[0]), parseInt(data[1]), parseInt(data[2]), parseInt(data[3]));
+  });
+};
+
 YeelightBlue.prototype.writeServiceStringCharacteristic = function(uuid, string, callback) {
   this.writeStringCharacteristic(SERVICE_UUID, uuid, string, callback);
 };
@@ -51,6 +64,10 @@ YeelightBlue.prototype.turnOff = function(callback) {
 
 YeelightBlue.prototype.setColorAndBrightness = function(red, green, blue, brightness, callback) {
   this.writeControlCharateristic(red, green, blue, brightness, callback);
+};
+
+YeelightBlue.prototype.getColorAndBrightness = function(callback) {
+    this.readControlCharateristic(callback);
 };
 
 YeelightBlue.prototype.setGradualMode = function(on, callback) {
